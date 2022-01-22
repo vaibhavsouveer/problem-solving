@@ -19,7 +19,7 @@ public class Test {
 
         if(midChar == c) {
             //aaaaab
-            while(midChar == input.charAt(mid - 1) && mid > 0) {
+            while(mid > 0 && midChar == input.charAt(mid - 1)) {
                 if(mid == 0) return mid;
                 mid = mid - 1;
             }
