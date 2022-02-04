@@ -1,4 +1,4 @@
-package dp.knapsack.equalsumpartition.bottomup;
+package dp.adityaverma.knapsack.equalsumpartition.bottomup;
 
 import java.util.stream.IntStream;
 

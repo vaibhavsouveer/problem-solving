@@ -1,4 +1,4 @@
-package dp.knapsack.minimumsubsetsumdifference.bottomup;
+package dp.adityaverma.knapsack.minimumsubsetsumdifference.bottomup;
 
 import java.util.stream.IntStream;
 

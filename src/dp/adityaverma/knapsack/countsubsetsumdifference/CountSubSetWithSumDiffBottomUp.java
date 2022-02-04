@@ -1,8 +1,8 @@
-package dp.knapsack.countsubsetsumdifference;
+package dp.adityaverma.knapsack.countsubsetsumdifference;
 
 import java.util.stream.IntStream;
 
-public class CountSubSetSumDiffBottomUp {
+public class CountSubSetWithSumDiffBottomUp {
     public static void main(String[] args) {
         int[] arr = {1, 1, 2, 3};
         int diff = 1;

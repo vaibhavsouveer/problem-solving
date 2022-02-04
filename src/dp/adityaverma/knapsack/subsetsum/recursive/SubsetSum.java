@@ -1,4 +1,4 @@
-package dp.knapsack.subsetsum.recursive;
+package dp.adityaverma.knapsack.subsetsum.recursive;
 
 public class SubsetSum {
     public static void main(String[] args) {
@@ -11,10 +11,7 @@ public class SubsetSum {
 
     public static boolean subsetSum(int[] arr, int n, int S) {
         if(n == 0) {
-            if(S == 0)
-                return true;
-            else
-                return false;
+            return S == 0;
         } else {
             if(S == 0)
                 return true;

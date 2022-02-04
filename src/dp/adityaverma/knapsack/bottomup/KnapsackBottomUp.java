@@ -1,4 +1,4 @@
-package dp.knapsack.bottomup;
+package dp.adityaverma.knapsack.bottomup;
 
 public class KnapsackBottomUp {
     public static void main(String[] args) {
