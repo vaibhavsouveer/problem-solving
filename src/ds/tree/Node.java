@@ -8,34 +8,23 @@ public class Node {
     int[] inOrder = {7, 12, 15, 16, 17, 20, 25, 27, 29, 120};
     int[] preOrder = {17, 12, 7, 15, 16, 29, 20, 25, 27, 120};
     public Node() {}
+
+    public Node(int data) {
+        this.data = data;
+    }
+
     public String toString() {
         return Integer.toString(data);
     }
 
-    public int getData() {
-        return data;
-    }
-    public void setData(int data) {
-        this.data = data;
-    }
     public Node getParent() {
         return parent;
     }
+
     public void setParent(Node parent) {
         this.parent = parent;
     }
-    public Node getLeftChild() {
-        return leftChild;
-    }
-    public void setLeftChild(Node leftChild) {
-        this.leftChild = leftChild;
-    }
-    public Node getRightChild() {
-        return rightChild;
-    }
-    public void setRightChild(Node rightChild) {
-        this.rightChild = rightChild;
-    }
+    /*
     public void addNode(int x) {
         //insert in right subtree
         if(x > this.getData()) {
@@ -157,5 +146,5 @@ public class Node {
             return null;
         }
     }
-
+*/
 }

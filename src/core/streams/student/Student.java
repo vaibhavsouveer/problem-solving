@@ -1,8 +1,7 @@
-package core.streams;
+package core.streams.student;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Student {
     private String name;

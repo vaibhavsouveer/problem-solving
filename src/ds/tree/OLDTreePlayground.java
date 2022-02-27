@@ -1,9 +1,9 @@
 package ds.tree;
 
-public class TreePlayground {
+public class OLDTreePlayground {
 
     public static void main(String[] args) {
-        Node root = new Node(17);
+        /*Node root = new Node(17);
         root.addNode(29);
         root.addNode(12);
         root.addNode(7);
@@ -14,7 +14,7 @@ public class TreePlayground {
         root.addNode(25);
         root.addNode(27);
         root.numberOfNodes();
-        root.inOrder();
+        root.inOrder();*/
         System.out.println();
         //root.preOrder();
         //System.out.println();
@@ -23,7 +23,7 @@ public class TreePlayground {
         //System.out.println("Predecessor of root: " + root.predecessor());
         //System.out.println("Predecessor of 29: " + root.getRightChild().predecessor());
         //System.out.println("Info on 12 ");
-        root.search(20).getNodeInfo();
+        //root.search(20).getNodeInfo();
 
     }
 
