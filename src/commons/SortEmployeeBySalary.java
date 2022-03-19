@@ -1,4 +1,4 @@
-package core.streams.employee;
+package commons;
 
 import java.util.Comparator;
 

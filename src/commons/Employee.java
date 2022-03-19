@@ -1,13 +1,13 @@
-package core.streams.employee;
+package commons;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class Employee {
-    String name;
-    String gender;
-    Department departmentName;
-    Double salary;
+    public String name;
+    public String gender;
+    public Department departmentName;
+    public Double salary;
 
 
     public Employee(String name, String gender, Department departmentName, double salary) {
@@ -47,6 +47,3 @@ public class Employee {
     }
 }
 
-enum Department {
-    PRODUCT, FINANCE, ACCOUNTS, ADVERTISING, SALES
-}

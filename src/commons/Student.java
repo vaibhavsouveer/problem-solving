@@ -1,14 +1,14 @@
-package core.streams.student;
+package commons;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Student {
-    private String name;
-    private int gradeLevel;
-    private double gpa;
-    private String gender;
-    private List<String> activities;
+public class Student implements Comparable{
+    public String name;
+    public int gradeLevel;
+    public double gpa;
+    public String gender;
+    public List<String> activities;
 
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
         this.name = name;
@@ -38,6 +38,11 @@ public class Student {
         */
 
 
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return this.name.compareTo(((Student)o).name);
     }
 
     static class SortByGPA implements Comparator<Student> {

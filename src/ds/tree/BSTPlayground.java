@@ -5,18 +5,19 @@ public class BSTPlayground {
         BinarySearchTree tree = constructBST();
         tree.printTree();
         System.out.println();
-        System.out.println("DiameterOfTree = " + tree.getDiameterOfTree());
+        tree.invertTree();
+
     }
 
     private static BinarySearchTree constructBST() {
         BinarySearchTree tree = new BinarySearchTree();
-        tree.add(15);
+        /*tree.add(15);
         tree.add(26);
         tree.add(20);
         tree.add(8);
-        tree.add(6);
+        tree.add(6);*/
         tree.add(3);
-        //tree.add(1);
+        tree.add(1);
         tree.add(7);
         return tree;
     }

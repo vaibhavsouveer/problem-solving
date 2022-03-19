@@ -1,4 +1,8 @@
-package core.streams.employee;
+package core.streams;
+
+import commons.Department;
+import commons.Employee;
+import commons.SortEmployeeBySalary;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -23,8 +27,8 @@ public class EmployeeStreams {
         Sorting a collection
      */
     public static void sortCollection() {
-        Collection<Employee> allEmployees = Employee.getAllEmployees();
-        //Collections.sort(allEmployees, new SortEmployeeBySalary());
+        List<Employee> allEmployees = Employee.getAllEmployees();
+        Collections.sort(allEmployees, new SortEmployeeBySalary());
         System.out.println(allEmployees);
     }
 
