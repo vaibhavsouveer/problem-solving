@@ -131,7 +131,22 @@ public class BinarySearchTree {
         if(node == null) {
             return 0;
         }
-        return Math.max(Math.max(treeDiameter(node.leftChild), treeDiameter(node.rightChild)), getHeight(node.leftChild) + getHeight(node.rightChild) + 1);
+        return Math.max(Math.max(treeDiameter(node.leftChild), treeDiameter(node.rightChild)),
+                getHeight(node.leftChild) + getHeight(node.rightChild) + 1);
+    }
+
+    void invertTree() {
+        invertTree(this.root);
+        printTree();
+    }
+    void invertTree(Node node) {
+        if(node != null) {
+            invertTree(node.leftChild);
+            invertTree(node.rightChild);
+            Node temp = node.leftChild;
+            node.leftChild = node.rightChild;
+            node.rightChild = temp;
+        }
     }
 
 }
