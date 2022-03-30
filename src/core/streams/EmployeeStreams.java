@@ -19,7 +19,7 @@ public class EmployeeStreams {
         System.out.println("sortBasedOnSalaryWithPair = " + sortBasedOnSalaryWithPair());
         */
 
-        sortCollection();
+        System.out.println("sortBasedOnSalaryWithPair = " + sortBasedOnSalaryWithPair());
 
     }
 
@@ -33,7 +33,7 @@ public class EmployeeStreams {
     }
 
     /*
-        List of employee details working in each department
+        List of employees (object) working in each department
      */
     public static Map<Department, List<Employee>> departmentWiseEmployees() {
         return Employee.getAllEmployees().stream()

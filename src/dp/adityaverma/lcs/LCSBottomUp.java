@@ -1,6 +1,6 @@
-package dp.adityaverma.longestcommonsubsequence.bottomup;
+package dp.adityaverma.lcs;
 
-public class LongestCommonSubsequence {
+public class LCSBottomUp {
     public static void main(String[] args) {
         String x = "abcdgh";
         String y = "abcdhrg";

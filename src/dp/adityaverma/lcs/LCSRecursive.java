@@ -1,6 +1,6 @@
-package dp.adityaverma.longestcommonsubsequence.recursive;
+package dp.adityaverma.lcs;
 
-public class LongestCommonSubsequence {
+public class LCSRecursive {
     public static void main(String[] args) {
         String x = "abcdg";
         String y = "abcdhr";
