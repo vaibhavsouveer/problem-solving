@@ -1,0 +1,18 @@
+We have to be careful of how we are returning values from recursion function.
+
+When writing the code try to imagine how the recursive calls are being made, how the method calls
+are going into stack and what values they will have and what values they will return. Try to draw
+the recursive tree diagram and see how the returned value will propagate when recursion starts to
+unfold.
+
+Keep in mind that whenever after a number of recursive calls are made and you find the answer in the
+last call then you should carefully see if this answer will be say added to or multiplied or
+concatenated to String literal, etc. and based on that we should see how the returned value from
+recursive call is used.
+
+Example, in case of finding floor of element (binary search) we get the answer in the last recursive
+call. This answer does not need to be added to previous answers (say when we are summing array) or
+concatenated (say when finding power set of string). So we can just return this answer up.
+
+So the statement calling recursive function will be:
+ return fun(arr, s, e, t, res);

@@ -1,0 +1,5 @@
+FLOOR-CEIL IN SORTED ARRAY WITH REPEATED ELEMENTS
+
+We keep calling recursive binary search algo till s > e.
+After this happens e will be at floor and s will be at ceil.
+This works even for repeated elements.
