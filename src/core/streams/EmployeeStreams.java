@@ -19,9 +19,20 @@ public class EmployeeStreams {
         System.out.println("sortBasedOnSalaryWithPair = " + sortBasedOnSalaryWithPair());
         */
 
-        System.out.println("sortBasedOnSalaryWithPair = " + sortBasedOnSalaryWithPair());
+        System.out.println("ans  = " + sortBasedOnSalaryWithPair());
+
 
     }
+
+    public static Map<String, Double> fun() {
+        List<Employee> allEmployees = Employee.getAllEmployees();
+        Arrays.asList(1, 5, 7).sort(Comparator.comparingInt(num -> num));
+        allEmployees.sort(Comparator.comparingDouble(emp -> emp.salary));
+        return allEmployees.stream()
+                .collect(Collectors.groupingBy(emp -> emp.departmentName.toString(), Collectors.averagingDouble(emp -> emp.salary)));
+    }
+
+
 
     /*
         Sorting a collection

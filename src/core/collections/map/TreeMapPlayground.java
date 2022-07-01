@@ -5,6 +5,7 @@ import commons.Student;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.stream.Stream;
 
 public class TreeMapPlayground {
     public static void main(String[] args) {
@@ -12,6 +13,11 @@ public class TreeMapPlayground {
         map.forEach((k, v) -> {
             System.out.println("key is = " + k + " and value is = " + v.name);
         });
+
+    }
+
+    private void getActivityList() {
+        Map<Integer, Student> map = getStudentMap();
 
     }
 
