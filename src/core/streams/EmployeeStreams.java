@@ -19,28 +19,23 @@ public class EmployeeStreams {
         System.out.println("sortBasedOnSalaryWithPair = " + sortBasedOnSalaryWithPair());
         */
 
-        System.out.println("ans  = " + sortBasedOnSalaryWithPair());
+        //System.out.println("ans  = " + sortBasedOnSalaryWithPair());
+        sortBySalary();
 
 
     }
-
-    public static Map<String, Double> fun() {
-        List<Employee> allEmployees = Employee.getAllEmployees();
-        Arrays.asList(1, 5, 7).sort(Comparator.comparingInt(num -> num));
-        allEmployees.sort(Comparator.comparingDouble(emp -> emp.salary));
-        return allEmployees.stream()
-                .collect(Collectors.groupingBy(emp -> emp.departmentName.toString(), Collectors.averagingDouble(emp -> emp.salary)));
-    }
-
-
 
     /*
-        Sorting a collection
+        Sort employees by salary using Streams, not Collections.sort or List.sort.
      */
-    public static void sortCollection() {
+    public static void sortBySalary() {
         List<Employee> allEmployees = Employee.getAllEmployees();
-        Collections.sort(allEmployees, new SortEmployeeBySalary());
-        System.out.println(allEmployees);
+        System.out.println("Employees sorted by salary : " +
+                        allEmployees.stream()
+                                // .sorted() this can be used if the type of stream elements is Comparable
+                                .sorted(Comparator.comparingDouble(emp -> emp.salary))
+                                .collect(Collectors.toList())
+                );
     }
 
     /*

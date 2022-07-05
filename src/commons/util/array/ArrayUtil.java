@@ -5,6 +5,10 @@ import java.util.OptionalInt;
 
 public class ArrayUtil {
 
+    public static int[] getIntArray() {
+        return new int[]{4, 76, 44, 91, 111, 8, 45};
+    }
+
     public static int getMaxElementInArray(int[][] arr, int m, int n) {
         OptionalInt max = Arrays.stream(arr)
                 .flatMapToInt(a -> Arrays.stream(a))

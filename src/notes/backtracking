@@ -1,0 +1,9 @@
+Backtracking may be needed when the data is stored in reference.
+Once the recursion unfolds, we will need the original data without modification from recursion calls down the recursive tree.
+If we store data in reference, once the value is added, it needs to be removed also once the recursion unfolds.
+For primitive data it is not needed as this changes for each recursion call and when recursion unfolds the value is the original one only.
+
+Compare these problems
+https://leetcode.com/problems/path-sum/
+
+https://leetcode.com/problems/path-sum-ii/
