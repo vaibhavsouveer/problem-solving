@@ -89,7 +89,7 @@ public class EmployeeStreams {
     public static List<Employee> sortBasedOnSalary() {
         return Employee.getAllEmployees().stream()
                 .sorted(Comparator.comparingDouble(employee -> employee.salary))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     /*

@@ -6,7 +6,7 @@ public class ReverseWordsInString {
         String[] s = input.trim().split(" ");
         StringBuilder result = new StringBuilder();
         for(String str : s) {
-            if(!str.isBlank()) {
+            if(!str.isEmpty()) {
                 result = new StringBuilder(str).append("_").append(result);
             }
         }

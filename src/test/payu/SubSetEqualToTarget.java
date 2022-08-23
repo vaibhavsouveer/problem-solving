@@ -2,9 +2,9 @@ package test.payu;
 
 import java.util.ArrayList;
 
-class Solution {
+class SubSetEqualToTarget {
     static ArrayList<String> subSets = new ArrayList<>();
-    static int target = 4;
+    static int target = 2;
     public static void main(String[] args) {
 
         int[] arr = {2,7,1,6,1};

@@ -17,7 +17,6 @@ public class SubsetSum {
                 return true;
         }
 
-
         if (arr[n - 1] > S) {
             return subsetSum(arr,n - 1, S);
         }
